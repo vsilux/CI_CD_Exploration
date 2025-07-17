@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "FC8D41A0-CA8F-41C7-B18D-F3F92267C23E",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:CI_CD_Exploration.xcodeproj",
+      "identifier" : "9DC741A72E29355500A5C92A",
+      "name" : "CI_CD_Exploration"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:CI_CD_Exploration.xcodeproj",
+        "identifier" : "9DC741B52E29355600A5C92A",
+        "name" : "CI_CD_ExplorationTests"
+      }
+    }
+  ],
+  "version" : 1
+}

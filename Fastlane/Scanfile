@@ -1,7 +1,7 @@
  workspace "CI_CD_Exploration.xcodeproj/project.xcworkspace"
  scheme "CI_CD_Exploration"
  sdk "iphonesimulator"
- device "Any iOS Simulator Device"
+ device "iPhone 15 Pro"
  code_coverage true
  xcargs '-parallelizeTargets'
  prelaunch_simulator true

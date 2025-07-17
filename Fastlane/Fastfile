@@ -18,7 +18,7 @@ default_platform(:ios)
 platform :ios do
   desc "Lane to run the unit tests"
   lane :tests do
-    run_tests(device: "iPhone 8",
-            scheme: "DocumentsValidator")
+    run_tests(device: "iPhone 15 Pro",
+            scheme: "CI_CD_Exploration")
   end
 end

@@ -1,8 +1,6 @@
  workspace "CI_CD_Exploration.xcodeproj/project.xcworkspace"
  scheme "CI_CD_Exploration"
- sdk "iphonesimulator"
- device "iPhone 16"
+ destination "platform=iOS Simulator,name=Any iOS Simulator Device"
  code_coverage true
- xcargs '-parallelizeTargets'
- prelaunch_simulator true
  derived_data_path "Build/"
+ skip_build_settings true

@@ -1,6 +1,10 @@
 fastlane_version '2.157'
 default_platform :ios
 
+# Set environment variables globally to handle xcodebuild timeouts
+ENV['FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT'] = '60'
+ENV['FASTLANE_XCODEBUILD_SETTINGS_RETRIES'] = '2'
+
 platform :ios do
 
     desc 'Builds project and executes unit tests'
@@ -8,6 +12,9 @@ platform :ios do
         scan(
             clean: options[:clean],
             skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution],
+            disable_xcpretty: true,
+            output_style: 'basic',
+            skip_build_settings: true
         )
     end
 

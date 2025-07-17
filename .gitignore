@@ -3,4 +3,5 @@ Build
 # fastlane
 Fastlane/report.xml
 Fastlane/test_output
-.DS_Store
+*.DS_Store
+

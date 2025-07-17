@@ -10,7 +10,7 @@ import XCTest
 final class CI_CD_ExplorationTests: XCTestCase {
 
     func testExample() {
-        XCTAssertEqual(2*2, 5)
+        XCTAssertEqual(2*2, 4)
     }
 
 }

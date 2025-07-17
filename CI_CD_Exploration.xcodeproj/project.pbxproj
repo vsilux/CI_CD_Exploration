@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
@@ -23,16 +23,8 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9DC741AA2E29355500A5C92A /* CI_CD_Exploration */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CI_CD_Exploration;
-			sourceTree = "<group>";
-		};
-		9DC741B92E29355600A5C92A /* CI_CD_ExplorationTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CI_CD_ExplorationTests;
-			sourceTree = "<group>";
-		};
+		9DC741AA2E29355500A5C92A /* CI_CD_Exploration */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CI_CD_Exploration; sourceTree = "<group>"; };
+		9DC741B92E29355600A5C92A /* CI_CD_ExplorationTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = CI_CD_ExplorationTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +132,7 @@
 				};
 			};
 			buildConfigurationList = 9DC741A32E29355500A5C92A /* Build configuration list for PBXProject "CI_CD_Exploration" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -148,7 +141,6 @@
 			);
 			mainGroup = 9DC7419F2E29355500A5C92A;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 9DC741A92E29355500A5C92A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

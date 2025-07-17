@@ -12,9 +12,8 @@ platform :ios do
         scan(
             clean: options[:clean],
             skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution],
-            disable_xcpretty: true,
-            output_style: 'basic',
-            skip_build_settings: true
+            output_style: 'raw',
+            skip_build: true
         )
     end
 

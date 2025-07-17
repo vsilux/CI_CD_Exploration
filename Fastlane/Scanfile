@@ -3,4 +3,4 @@
  destination "platform=iOS Simulator,name=Any iOS Simulator Device"
  code_coverage true
  derived_data_path "Build/"
- skip_build_settings true
+ skip_build true

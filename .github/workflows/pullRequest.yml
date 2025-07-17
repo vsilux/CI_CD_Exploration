@@ -16,6 +16,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v1
+    - name: List available simulators
+      run: xcrun simctl list
     - name: Bundle Install
       run: bundle install
     - name: Unit tests

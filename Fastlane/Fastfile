@@ -1,20 +1,24 @@
-fastlane_version '2.157'
-default_platform :ios
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
 
-# Set environment variables globally to handle xcodebuild timeouts
-ENV['FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT'] = '60'
-ENV['FASTLANE_XCODEBUILD_SETTINGS_RETRIES'] = '2'
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
 
 platform :ios do
-
-    desc 'Builds project and executes unit tests'
-    lane :unit_test do |options|
-        scan(
-            clean: options[:clean],
-            skip_package_dependencies_resolution: options[:skip_package_dependencies_resolution],
-            output_style: 'raw',
-            skip_build: true
-        )
-    end
-
+  desc "Lane to run the unit tests"
+  lane :tests do
+    run_tests(device: "iPhone 8",
+            scheme: "DocumentsValidator")
+  end
 end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9DBC393F2E2ADB52003DAC70 /* Device Library in Frameworks */ = {isa = PBXBuildFile; productRef = 9DBC393E2E2ADB52003DAC70 /* Device Library */; };
 		9DC741D72E29357000A5C92A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC741D32E29357000A5C92A /* Assets.xcassets */; };
 		9DC741D82E29357000A5C92A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC741D62E29357000A5C92A /* ContentView.swift */; };
 		9DC741D92E29357000A5C92A /* CI_CD_ExplorationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC741D52E29357000A5C92A /* CI_CD_ExplorationApp.swift */; };
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DBC393F2E2ADB52003DAC70 /* Device Library in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +109,7 @@
 			);
 			name = CI_CD_Exploration;
 			packageProductDependencies = (
+				9DBC393E2E2ADB52003DAC70 /* Device Library */,
 			);
 			productName = CI_CD_Exploration;
 			productReference = 9DC741A82E29355500A5C92A /* CI_CD_Exploration.app */;
@@ -161,6 +164,9 @@
 			);
 			mainGroup = 9DC7419F2E29355500A5C92A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9DBC393D2E2ADB52003DAC70 /* XCRemoteSwiftPackageReference "Device" */,
+			);
 			productRefGroup = 9DC741A92E29355500A5C92A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -481,6 +487,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DBC393D2E2ADB52003DAC70 /* XCRemoteSwiftPackageReference "Device" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kudit/Device.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DBC393E2E2ADB52003DAC70 /* Device Library */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DBC393D2E2ADB52003DAC70 /* XCRemoteSwiftPackageReference "Device" */;
+			productName = "Device Library";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9DC741A02E29355500A5C92A /* Project object */;
 }

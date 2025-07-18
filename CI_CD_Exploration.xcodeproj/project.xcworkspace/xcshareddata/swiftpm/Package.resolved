@@ -1,0 +1,33 @@
+{
+  "originHash" : "beca6d5c2e744855a820f6e0469443a3188fdd3f83544bbf06c5884173feffb0",
+  "pins" : [
+    {
+      "identity" : "color",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kudit/Color",
+      "state" : {
+        "revision" : "09657d4aaf1fccec26ca6299045cff76035f016c",
+        "version" : "1.3.6"
+      }
+    },
+    {
+      "identity" : "compatibility",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kudit/Compatibility",
+      "state" : {
+        "revision" : "1ae08d2a42cfccd36e4575c5879780fb53cb7ab5",
+        "version" : "1.10.15"
+      }
+    },
+    {
+      "identity" : "device",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kudit/Device.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1bc8a0e4057c20a1f0e55278085cfce122e83085"
+      }
+    }
+  ],
+  "version" : 3
+}

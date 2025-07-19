@@ -6,14 +6,6 @@ pipeline {
     	string(name: 'VERSION', defaultValue: '', description: 'Версия збірки у TestFlight')
     }
     stages {
-        stage('Install Dependencies') {
-            steps {
-                sh '''
-                    xcodegen generate
-                    brew install fastlane
-                '''
-            }
-        }
         stage('Pre-Build') {
             steps {
                 sh """

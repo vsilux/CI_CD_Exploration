@@ -11,7 +11,6 @@ pipeline {
                 sh """
             	agvtool new-version -all ${params.BUILD_NUMBER}
             	agvtool new-marketing-version ${params.VERSION}
-            	fastlane spaceauth -u Аккаунт_в_Apple_Developer_Program
             	echo n
                """
             }

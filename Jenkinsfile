@@ -18,7 +18,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                    xcodebuild -resolvePackageDependencies -workspace CI_CD_Exploration.xcodeproj/project.xcworkspace -scheme CI_CD_Exploration -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' -derivedDataPath Build/ -configuration Debug
+                    xcodebuild -workspace CI_CD_Exploration.xcodeproj/project.xcworkspace -scheme CI_CD_Exploration -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' -derivedDataPath Build/ -configuration Debug
                 '''
             }
         }
